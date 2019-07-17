@@ -1,5 +1,6 @@
 import React from 'react'
 import { Counter, BoxOne } from '.'
+import DataContext from '../context'
 
 class Layout extends React.Component {
   state = {
@@ -12,7 +13,9 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <>
+      <DataContext.Provider
+        value={{ initialValue: 0, changeValueFn: this.updateCounter }}
+      >
         <header>
           <h1>Snack and Learn - July 17</h1>
         </header>
@@ -23,11 +26,11 @@ class Layout extends React.Component {
           <Counter initialValue={12} />
           <hr />
           <h2>Props Drilling Example</h2>
-          <BoxOne initialValue={0} changeValueFn={this.updateCounter} />
+          <BoxOne />
           <hr />
           <p>The value of the last counter box is {this.state.count}! </p>
         </main>
-      </>
+      </DataContext.Provider>
     )
   }
 }

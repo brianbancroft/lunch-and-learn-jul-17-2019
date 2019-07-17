@@ -1,8 +1,8 @@
 import React from 'react'
 import { BoxTwo } from '.'
 
-const BoxOne = ({ initialValue, changeValueFn } = {}) => {
-  return <BoxTwo initialValue={initialValue} changeValueFn={changeValueFn} />
+const BoxOne = () => {
+  return <BoxTwo />
 }
 
 export default BoxOne

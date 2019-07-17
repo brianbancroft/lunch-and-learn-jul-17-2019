@@ -8,16 +8,20 @@
 
 The goal of this lesson is to show that we're in the
 
+## Styled Components
+
+- Intro
+- Example for styling from scratch
+- Example for extending
+- Example for themeing
+
 ## React Hooks
 
 - Intro
 - Basic hook example
-- UseEffect example
 
 ## React Context API
 
 - Intro
 - Context Provider Example
 - Context consumer Example (https://reactjs.org/docs/context.html#classcontexttype)
-
-##

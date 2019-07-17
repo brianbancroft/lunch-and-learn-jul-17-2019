@@ -1,2 +1,5 @@
 export { default as Layout } from './Layout'
 export { default as Counter } from './Counter'
+export { default as BoxOne } from './BoxOne'
+export { default as BoxTwo } from './BoxTwo'
+export { default as BoxThree } from './BoxThree'
